@@ -33,16 +33,16 @@ public static class Arrays
         // Step 1: Get the total number of elements in the list
         int count = data.Count;
 
-        // Step 2: Get the last 'amount' elements (these will move to the front)
+        // this Step 2: Get the last 'amount' elements (these will move to the front)
         List<int> endPart = data.GetRange(count - amount, amount);
 
         // Step 3: Get the remaining elements at the beginning
         List<int> startPart = data.GetRange(0, count - amount);
 
-        // Step 4: Clear the original list
+        // the Step 4: Clear the original list
         data.Clear();
 
-        // Step 5: Add the rotated parts
+        // Step 5: help the program to Add the rotated parts
         data.AddRange(endPart);
         data.AddRange(startPart);
     }
