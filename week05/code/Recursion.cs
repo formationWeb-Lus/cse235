@@ -70,7 +70,8 @@ public static class Recursion
     }
 
     // 5
-    public static void SolveMaze(List<string> results, Maze maze, int x = 0, int y = 0, List<(int, int)>? currPath = null)
+    public static void SolveMaze(List<string> results, 
+    Maze maze, int x = 0, int y = 0, List<(int, int)>? currPath = null)
     {
         if (currPath == null)
             currPath = new List<(int, int)>();
